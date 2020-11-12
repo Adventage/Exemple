@@ -27,6 +27,10 @@ input {
     left: 15px;
   }
 }
+p {
+  color: #868686;
+  font-family: "Lato";
+}
 h1 {
   font-size: 35px;
   font-weight: 400;
@@ -130,7 +134,6 @@ nav ul {
   text-align: center;
 }
 .service {
-  margin: 311px 0 111px 0;
   .container {
     display: grid;
     grid-template-columns: 515px 515px;
@@ -168,6 +171,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   color: white;
+  padding: 200px 0 0 0;
 }
 
 img {
@@ -184,8 +188,9 @@ img {
       max-width: 505px;
       margin: 25px 25px 25px 0;
       font-size: 13px;
-      font-family: "Open Sans";
       line-height: 24px;
+      padding-right: 20px;
+      color: white;
     }
 
     .button {
@@ -238,7 +243,7 @@ img {
 
     .plan {
       text-align: center;
-      width: 391px;
+
       height: 441px;
       border: 1px solid #ccd5df;
       background-color: #ffffff;
@@ -265,12 +270,12 @@ img {
         line-height: 22px;
         text-align: center;
         text-transform: uppercase;
-        padding: 57px 129px 0 112px;
+        padding: 57px 0 0 0;
         white-space: nowrap;
       }
 
       .price__per__month {
-        padding: 30px 155px 0 149px;
+        padding: 30px 0 0 0;
 
         h2 {
           color: #ffbb42;
@@ -311,8 +316,9 @@ img {
 }
 /*HOW IT WORK */
 .how__it__work {
-  max-width: 1700px;
-  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+
   padding-bottom: 300px;
 
   .work__title {
@@ -328,7 +334,7 @@ img {
       text-transform: uppercase;
     }
     h4 {
-      font-family: "Lato Light";
+      font-family: "Lato";
       font-weight: 300;
       font-style: normal;
       letter-spacing: normal;
@@ -370,17 +376,12 @@ img {
     width: 165px;
     height: 46px;
     background-color: #ffbb42;
-    position: relative;
-    bottom: -170px;
-    left: 45%;
     color: #ffffff;
-    font-family: Lato;
     font-size: 14px;
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     border: none;
+    position: relative;
+    top: 170px;
   }
 
   .work__description {
@@ -440,7 +441,7 @@ img {
 
     .client {
       width: 567px;
-      height: 241px;
+
       background-color: #ffffff;
       display: flex;
       align-items: flex-start;
@@ -451,16 +452,12 @@ img {
         padding: 51px 41px 17px 31px;
 
         color: #7b7b7b;
-        font-family: "Open Sans";
+
         font-size: 13px;
         font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;
+
         line-height: 22px;
         text-align: left;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
       }
       h3 {
         color: #394b50;
@@ -526,7 +523,7 @@ img {
       background-color: #ffbb42;
       margin-left: 10px;
       color: #ffffff;
-      font-family: Lato;
+      font-family: "Lato";
       font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
@@ -685,15 +682,17 @@ img {
 @media screen and (max-width: 1200px) {
   .about__us {
     flex-direction: column;
+    .about_text {
+      display: flex;
+      justify-content: center;
 
-    .text__position {
-      text-align: center;
-      padding: 213px 80px 253px 80px;
-      p {
-        max-width: 505px;
-        margin: 60px auto;
-        font-size: 15px;
-        text-align: left;
+      .text__position {
+        text-align: center;
+        padding: 213px 0 253px 0;
+        p {
+          margin: 25px;
+          padding: 0;
+        }
       }
     }
   }
@@ -735,13 +734,7 @@ img {
   .price {
     .choose__plan {
       display: grid;
-      .plan {
-        width: 700px;
-        hr {
-          width: 635px;
-          text-align: center;
-        }
-      }
+      grid-gap: 20px;
     }
   }
 }
@@ -769,3 +762,149 @@ img {
   }
 }
 /*MEDIA REQUEST FOR 900 PX*/
+@media screen and (max-width: 900px) {
+  /*banner*/
+  .banner {
+    .splide {
+      display: none;
+    }
+    .title {
+      h1 {
+        padding: 20px;
+      }
+      h4 {
+        padding: 20px;
+      }
+    }
+    .button__display {
+      padding-bottom: 150px;
+    }
+  }
+  /*our service*/
+  .service {
+    .heading {
+      margin-bottom: 110px;
+      h1 {
+        padding-bottom: 40px;
+      }
+    }
+    .container {
+      .service__item {
+        justify-content: center;
+        img {
+          position: absolute;
+          bottom: 191px;
+        }
+        .text {
+          text-align: center;
+          margin: 20px 20px 50px 20px;
+        }
+      }
+    }
+  }
+  /*about us*/
+
+  /*price*/
+
+  /*how it work*/
+  .how__it__work {
+    .work__title {
+      padding: 200px 0 100px 0;
+      h1 {
+        padding-bottom: 50px;
+      }
+    }
+    .work__border {
+      justify-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      .work__circle {
+        .work__circle__item1 {
+          padding: 55px 0 0 53px;
+        }
+        .work__circle__item2 {
+          padding: 55px 0 0 66px;
+        }
+        .work__circle__item3 {
+          padding: 55px 0 0 53px;
+        }
+        .work__circle__item4 {
+          padding: 55px 0 0 55px;
+        }
+      }
+
+      .arrow2 {
+        display: none;
+      }
+      .arrow1 {
+        display: none;
+      }
+      .arrow3 {
+        display: none;
+      }
+    }
+    .button {
+      top: 100px;
+    }
+  }
+  .happy__clients {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 0;
+    .container {
+      max-width: 100%;
+      display: block;
+      .client {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 50px;
+        img {
+          padding: 20px 0 0 0;
+        }
+        .client__info {
+          padding: 20px;
+          p {
+            padding: 0;
+            text-align: justify;
+          }
+          h3 {
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+  /*news letter*/
+  .newsletter {
+    background-image: none;
+
+    .subscribe {
+      .input1,
+      .input2,
+      button {
+        width: 90%;
+      }
+    }
+
+    .address {
+      left: 30px;
+      top: 100px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  /*PRICE*/
+  .price {
+    .choose__plan {
+      .plan:hover {
+        background-color: #709dca;
+        transform: scale(1);
+      }
+    }
+  }
+  nav {
+    display: none;
+  }
+}
